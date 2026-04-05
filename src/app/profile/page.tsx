@@ -17,7 +17,7 @@ export default function ProfilePage() {
             Save sizes, track orders, and let the AI push updated fits for your next training block.
           </p>
         </div>
-        <Button href="/chat">Update fit with AI</Button>
+        <Button href="/chat">Update fit</Button>
       </header>
 
       <section className="grid gap-4 md:grid-cols-3">
@@ -30,7 +30,7 @@ export default function ProfilePage() {
         <div>
           <h3 className="font-display text-xl text-white">Next kit</h3>
           <p className="text-white/70">
-            Generated from your training log. Swap colors or ask the AI for alternates.
+            Generated from your saved preferences. Swap colors or ask the stylist for alternates.
           </p>
           <ul className="mt-3 space-y-2 text-white/80">
             <li>• NightSprint Leggings — secure waistband for heavy squats.</li>

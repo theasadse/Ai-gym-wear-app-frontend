@@ -91,7 +91,7 @@ export default function ChatWindow() {
               className="h-2 w-2 animate-pulse rounded-full bg-white"
               style={{ animationDelay: "280ms" }}
             />
-            <span className="text-xs">Coach is typing…</span>
+            <span className="text-xs">Stylist is typing…</span>
           </div>
         )}
       </div>

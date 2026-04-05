@@ -19,7 +19,7 @@ export default function Home() {
             Look strong. Lift freely. Get fit that listens to your training plan.
           </h1>
           <p className="max-w-2xl text-lg text-white/70">
-            PulseFit pairs bold, technical pieces with an AI coach that sizes you, predicts your
+            PulseFit pairs bold, technical pieces with an AI stylist that sizes you, predicts your
             sweat rate, and keeps layers locked during sprints, lifts, and recovery days.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -30,7 +30,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 gap-4 text-sm text-white/70 sm:max-w-lg">
             <Stat label="Seamless & squat-proof" value="28 pieces" />
-            <Stat label="Coach-backed sizing" value="<2 min fit quiz" />
+            <Stat label="AI-backed sizing" value="<2 min fit quiz" />
             <Stat label="Free exchanges" value="30 days" />
             <Stat label="US shipping" value="2–4 business days" />
           </div>
@@ -78,11 +78,11 @@ export default function Home() {
       <section className="glass grid gap-6 rounded-3xl p-8 lg:grid-cols-2">
         <div className="space-y-4">
           <p className="pill inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-white/60">
-            AI chat + fit
+            Product advice
           </p>
-          <h2 className="font-display text-3xl text-white">Chat with the coach before you checkout.</h2>
+          <h2 className="font-display text-3xl text-white">Chat before you checkout.</h2>
           <p className="text-white/70">
-            Ask about breathability, barbell-proof seams, or rain runs. We’ll size you, recommend
+            Ask about breathability, barbell-proof seams, or rain runs. We’ll size you, suggest
             layers, and save your kit to your profile.
           </p>
           <div className="flex flex-wrap gap-3 text-sm text-white/70">
@@ -96,13 +96,13 @@ export default function Home() {
           <p className="text-sm uppercase tracking-[0.2em] text-white/50">How it works</p>
           <ul className="mt-3 space-y-3 text-white">
             <li>1. Tell us your training week, climate, and usual sizes.</li>
-            <li>2. AI selects pieces that match intensity, coverage, and mobility.</li>
+            <li>2. AI suggests pieces that match intensity, coverage, and mobility.</li>
             <li>3. Save to bag or ask for alternates—no awkward fitting rooms.</li>
           </ul>
         </div>
       </section>
 
-      <RecommendationCarousel title="Coach-picked for you" products={featured} />
+      <RecommendationCarousel title="Curated for you" products={featured} />
     </div>
   );
 }

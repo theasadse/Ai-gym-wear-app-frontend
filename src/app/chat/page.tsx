@@ -9,7 +9,7 @@ export default function ChatPage() {
           <p className="pill inline-block text-xs uppercase tracking-[0.25em] text-white/60">
             AI stylist
           </p>
-          <h1 className="mt-2 font-display text-3xl text-white">Chat with PulseFit Coach</h1>
+          <h1 className="mt-2 font-display text-3xl text-white">Chat with PulseFit Stylist</h1>
           <p className="max-w-2xl text-white/70">
             Get size-safe picks, outfit pairings, or rainy-day adjustments. We keep your fit data in
             your profile so each run, lift, and rest day feels dialed.

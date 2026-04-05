@@ -23,7 +23,7 @@ export default function Navbar() {
           </span>
           <div className="leading-tight">
             <p className="font-display text-xl">PulseFit</p>
-            <p className="text-xs text-white/60">Gymwear + AI coach</p>
+            <p className="text-xs text-white/60">Gymwear + smart picks</p>
           </div>
         </Link>
 
@@ -49,7 +49,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <Button href="/chat" variant="secondary">
-            Talk to Coach
+            Ask for picks
           </Button>
           <div className="hidden h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-sm font-semibold text-white/80 sm:inline-flex">
             🏋️‍♀️
@@ -59,4 +59,3 @@ export default function Navbar() {
     </header>
   );
 }
-

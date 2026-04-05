@@ -41,7 +41,7 @@ export default function CatalogPage() {
           </Button>
         </div>
         <p className="max-w-2xl text-white/70">
-          Search by intensity, choose your layers, or let the AI coach personalize your bag.
+          Search by intensity, choose your layers, or let the AI stylist personalize your bag.
         </p>
       </header>
 
@@ -49,7 +49,7 @@ export default function CatalogPage() {
 
       {visible.length === 0 ? (
         <div className="glass rounded-2xl p-6 text-white/70">
-          No matches yet. Try removing a filter or ask the AI coach for a fresh pull.
+          No matches yet. Try removing a filter or ask the AI stylist for a fresh pull.
         </div>
       ) : (
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
