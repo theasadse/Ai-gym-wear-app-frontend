@@ -53,7 +53,9 @@ export default function ProductCard({ product }: Props) {
           <Button variant="primary" fullWidth>
             Add to bag
           </Button>
-          <Button variant="secondary">AI fit</Button>
+          <Button href={`/products/${product.id}`} variant="secondary">
+            View
+          </Button>
         </div>
       </div>
     </div>

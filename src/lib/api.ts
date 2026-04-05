@@ -46,3 +46,15 @@ export async function postChatMessage(message: string, history: unknown) {
     body: JSON.stringify({ message, history }),
   });
 }
+
+export async function fetchProductById(id: string): Promise<Product> {
+  try {
+    return await apiFetch<Product>(`/products/${id}`);
+  } catch {
+    const fallback = products.find((p) => p.id === id);
+    if (!fallback) {
+      throw new Error("Product not found");
+    }
+    return fallback;
+  }
+}

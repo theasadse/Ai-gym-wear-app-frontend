@@ -39,7 +39,7 @@ export default function RecommendationCarousel({ title = "Personal picks", produ
             <p className="mt-2 text-xs text-white/60 line-clamp-2">{product.description}</p>
             <div className="mt-3 flex items-center justify-between">
               <span className="text-xs text-white/60">⭐ {product.rating.toFixed(1)}</span>
-              <Button variant="ghost" className="text-xs">
+              <Button href={`/products/${product.id}`} variant="ghost" className="text-xs">
                 View
               </Button>
             </div>
