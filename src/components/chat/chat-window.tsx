@@ -53,7 +53,7 @@ export default function ChatWindow() {
         {
           role: "assistant",
           content:
-            "I couldn't reach the AI backend. But I can still suggest a grip-tight legging, a breathable tee, and a waterproof layer if you share your size and focus.",
+            "Couldn’t reach the suggestions service. I can still recommend a compression top, breathable tee, and waterproof layer if you share size and focus.",
         },
       ]);
     } finally {

@@ -1,12 +1,13 @@
 import Button from "@/components/ui/button";
 import ProductCard from "@/components/product-card";
 import RecommendationCarousel from "@/components/recommendation-carousel";
-import { products } from "@/lib/data";
+import { fetchProducts } from "@/lib/api";
 
-const featured = products.filter((p) => p.featured);
-const newArrivals = products.filter((p) => p.newArrival);
+export default async function Home() {
+  const products = await fetchProducts();
+  const featured = products.filter((p) => p.featured);
+  const newArrivals = products.filter((p) => p.newArrival).slice(0, 6);
 
-export default function Home() {
   return (
     <div className="mx-auto flex max-w-6xl flex-col gap-12">
       <section className="grid items-center gap-8 lg:grid-cols-[1.15fr_0.85fr]">

@@ -11,6 +11,7 @@ export type Product = {
   stock: number;
   featured?: boolean;
   newArrival?: boolean;
+  sizes?: string;
 };
 
 export const products: Product[] = [

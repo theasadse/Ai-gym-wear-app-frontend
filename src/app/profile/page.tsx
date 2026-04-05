@@ -1,10 +1,10 @@
 import RecommendationCarousel from "@/components/recommendation-carousel";
 import Button from "@/components/ui/button";
-import { products } from "@/lib/data";
+import { fetchRecommendations } from "@/lib/api";
 
-const recs = products.slice(0, 4);
+export default async function ProfilePage() {
+  const recs = await fetchRecommendations();
 
-export default function ProfilePage() {
   return (
     <div className="mx-auto flex max-w-6xl flex-col gap-8">
       <header className="flex flex-wrap items-start justify-between gap-3">
@@ -14,7 +14,8 @@ export default function ProfilePage() {
           </p>
           <h1 className="mt-2 font-display text-3xl text-white">Your training locker</h1>
           <p className="max-w-2xl text-white/70">
-            Save sizes, track orders, and let the AI push updated fits for your next training block.
+            Save sizes, track orders, and let the AI stylist push updated fits for your next training
+            block.
           </p>
         </div>
         <Button href="/chat">Update fit</Button>
