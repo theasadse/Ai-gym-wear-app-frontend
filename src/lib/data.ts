@@ -57,7 +57,7 @@ export const products: Product[] = [
     stock: 32,
   },
   {
-    id: "leg-nightSprint",
+    id: "leg-nightsprint",
     name: "NightSprint Leggings",
     price: 92,
     category: "Bottoms",
@@ -125,4 +125,8 @@ export const products: Product[] = [
   },
 ];
 
-export const filters = {\n  categories: [\"All\", \"Tops\", \"Bottoms\", \"Sets\", \"Outerwear\", \"Footwear\"],\n  tags: [\"compression\", \"pockets\", \"anti-odor\", \"lightweight\", \"supportive\", \"reflective\"],\n  sizes: [\"XS\", \"S\", \"M\", \"L\", \"XL\"],\n};\n*** End Patch켜​
+export const filters = {
+  categories: ["All", "Tops", "Bottoms", "Sets", "Outerwear", "Footwear"],
+  tags: ["compression", "pockets", "anti-odor", "lightweight", "supportive", "reflective"],
+  sizes: ["XS", "S", "M", "L", "XL"],
+};

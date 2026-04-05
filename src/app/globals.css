@@ -59,4 +59,22 @@ body {
     border: 1px solid var(--color-border);
     background: rgba(255, 255, 255, 0.02);
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer base {
+  .font-display {
+    font-family: var(--font-display), "Space Grotesk", system-ui, sans-serif;
+  }
+
+  .font-body {
+    font-family: var(--font-body), "Sora", system-ui, sans-serif;
+  }
 }
